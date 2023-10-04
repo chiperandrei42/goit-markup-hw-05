@@ -29,7 +29,7 @@
           <nav class="main-navigation pages">
             <ul class="list-class">
               <li>
-                <a class="link-class current" href="index.html">Studio</a>
+                <a class="link-class current" href="index.html">Studio </a>
               </li>
               <li>
                 <a class="link-class" href="portfolio.html">Portfolio</a>
@@ -74,7 +74,7 @@
             EFFECTIVE SOLUTIONS FOR YOUR BUSINESS
           </h2>
 
-          <button class="request-our-service" type="button">
+          <button data-modal-open class="request-our-service" type="button">
             Request our service
           </button>
         </section>
@@ -145,24 +145,43 @@
         <div class="container">
           <section class="what-we-do-container">
             <h2 class="heading-section">What we do</h2>
-            <div class="what-we-do-images">
-              <img
-                src="./images/what-we-do-example-1.jpg"
-                alt="person typing on the keyboard"
-                width="370"
-              />
 
-              <img
-                src="./images/what-we-do-example-2.jpg"
-                alt="person holding a smartphone"
-                width="370"
-              />
+            <div class="what-we-do-overlay-container">
+              <div class="what-we-do-images">
+                <div class="what-we-do-img-overlay">
+                  <div class="what-we-do-overlay-background">
+                    <p class="what-we-do-overlay-text">DESKTOP APPS</p>
+                  </div>
+                  <img
+                    src="./images/what-we-do-example-1.jpg"
+                    alt="person typing on the keyboard"
+                    width="370"
+                  />
+                </div>
 
-              <img
-                src="./images/what-we-do-example-3.jpg"
-                alt="person drawing on a device"
-                width="370"
-              />
+                <div class="what-we-do-img-overlay">
+                  <div class="what-we-do-overlay-background">
+                    <p class="what-we-do-overlay-text">MOBILE APPS</p>
+                  </div>
+                  <img
+                    src="./images/what-we-do-example-2.jpg"
+                    alt="person holding a smartphone"
+                    width="370"
+                  />
+                </div>
+
+                <div class="what-we-do-img-overlay">
+                  <div class="what-we-do-overlay-background">
+                    <p class="what-we-do-overlay-text">DESIGN SOLUTIONS</p>
+                  </div>
+                <div class="what-we-do-img-overlay">
+                  <img
+                    src="./images/what-we-do-example-3.jpg"
+                    alt="person drawing on a device"
+                    width="370"
+                  />
+                </div>
+              </div>
             </div>
           </section>
         </div>
@@ -481,5 +500,17 @@
         </div>
       </section>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <div class="modal-box">
+          <button class="close-modal-button" data-modal-close>
+            <svg class="close-modal-svg">
+              <use href="./symbol-defs.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
