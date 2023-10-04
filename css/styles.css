@@ -235,27 +235,13 @@ stroke: var(--text-hover-color);
 
 .current {
     color: var(--text-hover-color);
+}
+
+.current {
             padding-bottom: 25px;
-            color: var(--active-link);
+            color: var(--text-hover-color);
             border-bottom: 4px solid #2196f3;
             border-radius: 2px;
-}
-
-.current-page-dash {
-    width:42px;
-    height:4px;
-    display:flex;
-    position:absolute;
-    margin-top:26px;
-}
-
-.current-page-dash-portfolio {
-    height:4px;
-    width:58px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    margin-top: 45px;
 }
 
 body {
@@ -637,6 +623,7 @@ padding-bottom:20px;
 
 .modal-content {
 }
+
 .modal-box {
 background-color: #fff;
     width: 528px;
@@ -661,6 +648,7 @@ background-color: #fff;
     border-radius:50%;
     background-color:transparent;
     cursor:pointer;
+    
 }
 
 .is-hidden {
@@ -681,8 +669,6 @@ background-color: #fff;
     align-items: center;
     justify-content: center;
     bottom:0;
-    transform: translatey(100%);
-        transition: transform 250ms ease-in-out;
 }
 
 .what-we-do-overlay-text {
