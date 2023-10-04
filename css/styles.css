@@ -11,6 +11,9 @@
 body {
     font-family: var(--heading-font-family);
     color: var(--default-text-color);
+    &.modal-active {
+            overflow: hidden;
+    }
 }
 
 img {
@@ -621,7 +624,18 @@ padding-bottom:20px;
         align-items: center;
 }
 
-.modal-content {
+.modal:not(.is-hidden) {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .modal-box {
@@ -648,7 +662,6 @@ background-color: #fff;
     border-radius:50%;
     background-color:transparent;
     cursor:pointer;
-    
 }
 
 .is-hidden {
@@ -657,7 +670,6 @@ background-color: #fff;
 
 .what-we-do-overlay-container {
     position: relative;
-        overflow: hidden;
 }
 
 .what-we-do-overlay-background {
@@ -678,8 +690,4 @@ background-color: #fff;
         font-weight: 700;
         line-height: 16px;
         letter-spacing: 0.03em;
-}
-
-.what-we-do-img-overlay:hover .what-we-do-overlay-background {
-    transform: translatey(0);
 }
