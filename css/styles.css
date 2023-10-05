@@ -11,9 +11,6 @@
 body {
     font-family: var(--heading-font-family);
     color: var(--default-text-color);
-    &.modal-active {
-            overflow: hidden;
-    }
 }
 
 img {
